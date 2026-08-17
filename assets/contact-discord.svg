@@ -5,17 +5,19 @@
         --bg: #0d1117;
         --titlebar-bg: #161b22;
         --accent: #2aaea6;
+        --widget-border: #30363d;
       }
       @media (prefers-color-scheme: light) {
         :root {
           --bg: #dde5ef;
           --titlebar-bg: #c8d3e0;
+          --widget-border: #7a8ba0;
         }
       }
       .term  { font-family: 'JetBrains Mono NF','JetBrainsMonoNL Nerd Font','JetBrains Mono','Fira Code','Cascadia Code','SF Mono','Menlo','Consolas',monospace; }
       .accent{ fill: var(--accent); }
       .bg-main { fill: var(--bg); }
-      .widget-border { fill: none; stroke: var(--titlebar-bg); stroke-width: 2; }
+      .widget-border { fill: none; stroke: var(--widget-border); stroke-width: 2; }
       .bold  { font-weight: 700; }
     ]]></style>
   </defs>

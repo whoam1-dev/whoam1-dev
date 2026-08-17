@@ -8,6 +8,7 @@
         --fg: #d4d4d4;
         --muted: #7a8290;
         --accent: #2aaea6;
+        --widget-border: #30363d;
       }
       @media (prefers-color-scheme: light) {
         :root {
@@ -16,6 +17,7 @@
           --border: #a5b3c2;
           --fg: #1a1f26;
           --muted: #5c6773;
+          --widget-border: #7a8ba0;
         }
       }
       .term  { font-family: 'JetBrains Mono NF','JetBrainsMonoNL Nerd Font','JetBrains Mono','Fira Code','Cascadia Code','SF Mono','Menlo','Consolas',monospace; }
@@ -26,7 +28,7 @@
       .bg-titlebar   { fill: var(--titlebar-bg); }
       .stroke-border { stroke: var(--border); fill: none; }
       .envelope-fold { fill: none; stroke: var(--bg); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-      .widget-border { fill: none; stroke: var(--titlebar-bg); stroke-width: 2; }
+      .widget-border { fill: none; stroke: var(--widget-border); stroke-width: 2; }
       .bold  { font-weight: 700; }
     ]]></style>
   </defs>
