@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="290" viewBox="0 0 820 290">
+  <defs>
+    <linearGradient id="archGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#4bd6cc"/>
+      <stop offset="55%"  stop-color="#2aaea6"/>
+      <stop offset="100%" stop-color="#1e847e"/>
+    </linearGradient>
+    <style><![CDATA[
+      :root {
+        --bg: #0d1117;
+        --titlebar-bg: #161b22;
+        --border: #21262d;
+        --info-border: #30363d;
+        --fg: #d4d4d4;
+        --dim: #7a8290;
+        --accent: #2aaea6;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #dde5ef;
+          --titlebar-bg: #c8d3e0;
+          --border: #a5b3c2;
+          --info-border: #a5b3c2;
+          --fg: #1a1f26;
+          --dim: #5c6773;
+        }
+      }
+      .term  { font-family: 'JetBrains Mono NF','JetBrainsMonoNL Nerd Font','JetBrains Mono','Fira Code','Cascadia Code','SF Mono','Menlo','Consolas',monospace; }
+      .arch  { fill: url(#archGrad); font-weight: 700; }
+      .accent{ fill: var(--accent); }
+      .fg    { fill: var(--fg); }
+      .dim   { fill: var(--dim); }
+      .muted { fill: var(--dim); }
+      .bg-main       { fill: var(--bg); }
+      .bg-titlebar   { fill: var(--titlebar-bg); }
+      .stroke-border { stroke: var(--border); fill: none; }
+      .stroke-info   { stroke: var(--info-border); fill: none; }
+      .bold  { font-weight: 700; }
+      .ico   { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .widget-border { fill: none; stroke: var(--titlebar-bg); stroke-width: 2; }
+    ]]></style>
+
+    <symbol id="i-user" viewBox="0 0 24 24">
+      <path class="ico" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+      <circle class="ico" cx="12" cy="7" r="4"/>
+    </symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24">
+      <rect class="ico" x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+      <line class="ico" x1="8" y1="21" x2="16" y2="21"/>
+      <line class="ico" x1="12" y1="17" x2="12" y2="21"/>
+    </symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24">
+      <polyline class="ico" points="4 17 10 11 4 5"/>
+      <line class="ico" x1="12" y1="19" x2="20" y2="19"/>
+    </symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24">
+      <rect class="ico" x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+      <rect class="ico" x="9" y="9" width="6" height="6"/>
+      <line class="ico" x1="9" y1="1"  x2="9"  y2="4"/>
+      <line class="ico" x1="15" y1="1" x2="15" y2="4"/>
+      <line class="ico" x1="9" y1="20" x2="9"  y2="23"/>
+      <line class="ico" x1="15" y1="20" x2="15" y2="23"/>
+      <line class="ico" x1="20" y1="9"  x2="23" y2="9"/>
+      <line class="ico" x1="20" y1="14" x2="23" y2="14"/>
+      <line class="ico" x1="1" y1="9"   x2="4"  y2="9"/>
+      <line class="ico" x1="1" y1="14"  x2="4"  y2="14"/>
+    </symbol>
+    <symbol id="i-distro" viewBox="0 0 24 24">
+      <path class="ico" d="m7.5 4.27 9 5.15"/>
+      <path class="ico" d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
+      <path class="ico" d="m3.3 7 8.7 5 8.7-5"/>
+      <path class="ico" d="M12 22V12"/>
+    </symbol>
+  </defs>
+
+  <rect class="bg-main" x="0" y="0" width="820" height="290" rx="10" ry="10"/>
+
+  <path class="bg-titlebar" d="M 10,0 L 810,0 Q 820,0 820,10 L 820,34 L 0,34 L 0,10 Q 0,0 10,0 Z"/>
+  <line class="stroke-border" x1="0" y1="34" x2="820" y2="34" stroke-width="1"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="60" cy="17" r="6" fill="#28c840"/>
+  <text x="410" y="22" text-anchor="middle" font-size="12" class="term muted">Terminal - fastfetch</text>
+
+  <text x="24" y="60" font-size="13" class="term">
+    <tspan class="fg">[</tspan><tspan class="accent bold">whoam1-dev@github</tspan><tspan class="fg"> </tspan><tspan class="accent">~</tspan><tspan class="fg">]$ fastfetch</tspan>
+  </text>
+
+  <!-- Arch ASCII logo -->
+  <g class="term arch" font-size="9" xml:space="preserve">
+    <text x="40"  y="94">                   -`</text>
+    <text x="40"  y="104">                  .o+`</text>
+    <text x="40"  y="114">                 `ooo/</text>
+    <text x="40"  y="124">                `+oooo:</text>
+    <text x="40"  y="134">               `+oooooo:</text>
+    <text x="40"  y="144">               -+oooooo+:</text>
+    <text x="40"  y="154">             `/:-:++oooo+:</text>
+    <text x="40"  y="164">            `/++++/+++++++:</text>
+    <text x="40"  y="174">           `/++++++++++++++:</text>
+    <text x="40"  y="184">          `/+++ooooooooooooo/`</text>
+    <text x="40"  y="194">         ./ooosssso++osssssso+`</text>
+    <text x="40"  y="204">        .oossssso-````/ossssss+`</text>
+    <text x="40"  y="214">       -osssssso.      :ssssssso.</text>
+    <text x="40"  y="224">      :osssssss/        osssso+++.</text>
+    <text x="40"  y="234">     /ossssssss/        +ssssooo/-</text>
+    <text x="40"  y="244">   `/ossssso+/:-        -:/+osssso+-</text>
+    <text x="40"  y="254">  `+sso+:-`                 `.-/+oso:</text>
+    <text x="40"  y="264"> `++:.                           `-/+/</text>
+    <text x="40"  y="274"> .`                                 `/</text>
+  </g>
+
+  <!-- Info block -->
+  <g class="term" font-size="14">
+    <text y="94">
+      <tspan class="accent bold" x="290">whoam1-dev</tspan><tspan class="fg">@</tspan><tspan class="accent bold">github</tspan>
+    </text>
+    <line class="stroke-info" x1="290" y1="104" x2="560" y2="104" stroke-width="1"/>
+
+    <use href="#i-user"     x="290" y="118" width="16" height="16"/>
+    <text x="314" y="135"><tspan class="accent bold">name</tspan><tspan class="fg" x="416">whoam1</tspan></text>
+
+    <use href="#i-monitor"  x="290" y="140" width="16" height="16"/>
+    <text x="314" y="157"><tspan class="accent bold">role</tspan><tspan class="fg" x="416">Developer</tspan></text>
+
+    <use href="#i-terminal" x="290" y="162" width="16" height="16"/>
+    <text x="314" y="179"><tspan class="accent bold">top lang</tspan><tspan class="fg" x="416">Java</tspan></text>
+
+    <use href="#i-cpu"      x="290" y="184" width="16" height="16"/>
+    <text x="314" y="201"><tspan class="accent bold">kernel</tspan><tspan class="fg" x="416">Linux</tspan></text>
+
+    <use href="#i-distro"   x="290" y="206" width="16" height="16"/>
+    <text x="314" y="223"><tspan class="accent bold">distro</tspan><tspan class="fg" x="416">Arch Linux</tspan></text>
+  </g>
+
+  <rect class="widget-border" x="1" y="1" width="818" height="288" rx="10" ry="10"/>
+</svg>
